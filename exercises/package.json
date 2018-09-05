@@ -10,5 +10,16 @@
     "testEnvironment": "node"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0"
+  },
+      "babel": {
+          "presets": [
+            "es2015"
+           ],
+            "sourceMaps": true,
+            "retainLines": true
+      }
 }
