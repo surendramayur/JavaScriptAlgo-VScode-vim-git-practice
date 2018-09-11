@@ -9,16 +9,23 @@
 //   fib(4) === 3
 
 function fib(n) {
-    const result = [0, 1];
+   if (n < 2) {
+       return n;
+   }
 
-    for (let i = 2; i <= n; i++) {
-        const a = result[i - 1]; //same as [result.length - 1];
-        const b = result[i - 2];
-
-        result.push(a + b);
-    }
-
-    return result[n]; //same as result.length - 1
+   return fib(n -1) + fib(n - 2);
 }
 
 module.exports = fib;
+
+
+ /* const result = [0, 1];
+
+ for (let i = 2; i <= n; i++) {
+     const a = result[i - 1]; //same as [result.length - 1];
+     const b = result[i - 2];
+
+     result.push(a + b);
+ }
+
+ return result[n]; //same as result.length - 1 */
